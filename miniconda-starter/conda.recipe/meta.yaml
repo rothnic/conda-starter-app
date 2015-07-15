@@ -1,0 +1,18 @@
+package:
+  name: example_conda_app
+  version: "0.1"
+
+source:
+  path: ../
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - pandas
+
+test:
+  imports:
+    - example_conda_app
