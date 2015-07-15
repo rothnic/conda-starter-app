@@ -1,4 +1,4 @@
-FROM docker-miniconda-base
+FROM rothnic/tinyconda:latest
 
 COPY . /app
 WORKDIR /app
