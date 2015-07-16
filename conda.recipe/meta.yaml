@@ -1,6 +1,6 @@
 package:
   name: example_conda_app
-  version: "0.1"
+  version: {{ environ.get('GIT_DESCRIBE_TAG', '')[1:]+environ.get('GIT_DESCRIBE_NUMBER', '') }}
 
 source:
   path: ../
@@ -14,5 +14,9 @@ requirements:
     - pandas
 
 test:
+  requires:
+    - pytest
   imports:
     - example_conda_app
+  commands:
+    - py.test ../example_conda_app/test/test_app.py

@@ -3,8 +3,7 @@ import versioneer
 
 setup (
     name             = "example_conda_app",
-    version          = versioneer.get_version(),
-    cmdclass         = versioneer.get_cmdclass(),
+    version          = "0.1",
     description      = "Example application to be deployed.",
     packages         = ["example_conda_app"],
     entry_points     = {'console_scripts':

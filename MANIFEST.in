@@ -1,2 +1,3 @@
 include versioneer.py
 include example_conda_app/_version.py
+include .pylintrc
