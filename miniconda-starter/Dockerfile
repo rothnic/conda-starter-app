@@ -1,9 +1,11 @@
 FROM rothnic/tinyconda:latest
 
+COPY ./requirements.txt /app/requirements.txt
+RUN conda install --file /app/requirements.txt && \
+    conda clean --yes --tarballs --packages
+
 COPY . /app
 WORKDIR /app
-RUN conda build ./conda.recipe && \
-    conda install --use-local example_conda_app && \
-    conda clean --yes --tarballs --packages --source-cache
+RUN python setup.py install
 
 CMD ["run-the-app"]
