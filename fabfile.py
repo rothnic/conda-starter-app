@@ -56,3 +56,8 @@ def test():
 def clean_conda():
     """Remove all cached files from conda."""
     local('conda clean --yes --tarballs --packages')
+
+def git_tag(tag):
+    """Update the project revision and push to git repo."""
+    local('git tag ' + str(tag))
+    local('git push --tags')
