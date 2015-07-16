@@ -37,7 +37,7 @@ def get_config():
     cfg.VCS = "git"
     cfg.style = "pep440"
     cfg.tag_prefix = ""
-    cfg.parentdir_prefix = "miniconda-starter-"
+    cfg.parentdir_prefix = ""
     cfg.versionfile_source = "example_conda_app/_version.py"
     cfg.verbose = False
     return cfg

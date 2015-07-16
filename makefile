@@ -1,5 +1,4 @@
 
-
 build:
 	docker build -t example_conda_app .
 
