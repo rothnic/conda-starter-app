@@ -1,0 +1,10 @@
+conda:
+  run:
+    - pandas
+  test:
+    - pytest
+    - pylint
+
+pip:
+  dev:
+    - versioneer>=15

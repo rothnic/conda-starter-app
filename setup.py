@@ -1,5 +1,4 @@
 from setuptools import setup
-import versioneer
 
 setup (
     name             = "example_conda_app",
