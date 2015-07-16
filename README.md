@@ -4,6 +4,14 @@ A template project to get started with an app that is ready to develop, test, an
 
 This project minimizes external dependencies, with the only hard dependency being either a miniconda install, or docker. Fabric (python) is used both on the host machine and docker images to automate some of the tasks, so is recommended.
 
+**benefits of this starter**
+* reproducible dev, test, and execution
+* relatively small for a python docker image
+* uses conda, so no unnecessary recompilation, access to any python version
+* optimized dockerfiles for very fast rebuilds
+* setup with tests and linting (pep8)
+* includes conda recipe if it will be redistributed via conda
+
 ## quickstart
 
 **dependencies**
