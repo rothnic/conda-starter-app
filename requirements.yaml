@@ -1,6 +1,8 @@
 conda:
   run:
     - pandas
+    - sqlalchemy
+    - pymysql
   test:
     - pytest
     - pylint

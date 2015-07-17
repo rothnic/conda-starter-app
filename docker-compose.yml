@@ -1,0 +1,8 @@
+tester:
+  build: ./tests
+  links:
+   - datadb
+datadb:
+  build: ./tests/test_db
+  volumes:
+    - ./tests/test_db:/etc/mysql/conf.d

@@ -45,7 +45,7 @@ def run():
 
 def build_test():
     """Build the docker image for testing the application."""
-    local('docker build -t example_conda_app_tester -f ./tests/Dockerfile .')
+    local('docker build -t example_conda_app_tester ./tests')
 
 def test():
     """Build the app image, build the test image, then run the test image."""
